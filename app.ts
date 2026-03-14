@@ -33,3 +33,27 @@ function add(...trr:number[]){
 }
 
 add(1,2,3,3,3,3,3,3,3,4,5,6,7,8)
+
+
+
+function getInfo<T>(data: T) {
+    return data
+}
+
+
+getInfo<string>('Hiiii')
+getInfo<number>(222)
+
+
+function getFirstElement<T>(arr: T[]): T {
+console.log(arr[0]);
+}
+
+getFirstElement<number>([1,2,3])
+getFirstElement<string>(["a","b","c"])
+
+
+let a: any = 10
+
+let d1 = (a as string)
+console.log(typeof d1);
