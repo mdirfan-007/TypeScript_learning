@@ -56,4 +56,16 @@ function sum() {
     console.log(1 + 1);
 }
 console.log(sum());
+//Type Inference 
+let age = '10';
+console.log(age);
+//Type Annotation
+let numb = "10";
+console.log(numb);
+let user2 = {
+    name: 'Md Irfan',
+    email: 'a@a.com',
+    age: 23
+};
+console.log(user2);
 //# sourceMappingURL=app.js.map

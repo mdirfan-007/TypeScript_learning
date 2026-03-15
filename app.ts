@@ -90,3 +90,31 @@ function sum (): void {
 }
 console.log(sum());
 
+//Type Inference 
+
+let age='10'
+console.log(age);
+
+//Type Annotation
+
+let numb: string = "10"
+console.log(numb);
+
+//Interface
+
+interface user{
+    name:string,
+    email:string
+    age: number
+
+}
+
+let user2 : user={
+    name: 'Md Irfan',
+    email: 'a@a.com',
+    age: 23
+
+}
+console.log(user2);
+
+
