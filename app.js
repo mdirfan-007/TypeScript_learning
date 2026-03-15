@@ -14,7 +14,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // console.log(b1);
 // function getMan (name: string, age: number, gender: string='not to say'){
 //     console.log(name, age, gender);
-// } 
+// }
 // getMan('Irfan',26,'Male')
 // getMan('Arthor',22)
 // function add(...trr:number[]){
@@ -34,38 +34,56 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // let a: any = 10
 // let d1 = (a as string)
 // console.log(typeof d1);
-//Array
-let arr = [12, 3, 45, 6, 67, 2];
-console.log(arr);
-//Tuple
-let arr2 = [12, 'hekki'];
-console.log(arr2[1]);
-//Enum
-var statusCode;
-(function (statusCode) {
-    statusCode[statusCode["success"] = 200] = "success";
-    statusCode[statusCode["create"] = 201] = "create";
-    statusCode[statusCode["error"] = 404] = "error";
-})(statusCode || (statusCode = {}));
-let accessCode = statusCode.error;
-console.log(accessCode);
-//Types
-let a = 'undefined';
-console.log(typeof a);
-function sum() {
-    console.log(1 + 1);
-}
-console.log(sum());
-//Type Inference 
-let age = '10';
+// //Array
+// let arr: number[] = [12, 3, 45, 6, 67, 2];
+// console.log(arr);
+// //Tuple
+// let arr2: [number, string] = [12, "hekki"];
+// console.log(arr2[1]);
+// //Enum
+// enum statusCode {
+//   success = 200,
+//   create = 201,
+//   error = 404,
+// }
+// let accessCode: statusCode = statusCode.error;
+// console.log(accessCode);
+// //Types
+// let a: any = "undefined";
+// console.log(typeof a);
+// function sum(): void {
+//   console.log(1 + 1);
+// }
+// console.log(sum());
+//Type Inference
+let age = "10";
 console.log(age);
 //Type Annotation
 let numb = "10";
 console.log(numb);
 let user2 = {
-    name: 'Md Irfan',
-    email: 'a@a.com',
-    age: 23
+    name: "Md Irfan",
+    email: "a@a.com",
+    age: 23,
 };
 console.log(user2);
+let userRole = {
+    name: "Md Framan",
+    email: "md@.com",
+    role: "Admin",
+    age: 11,
+};
+console.log(userRole);
+let getuser = {
+    name: 'Md Danish',
+    role: 'Analyst'
+};
+console.log(getuser);
+//Union Type
+function getId(id) {
+    console.log(id);
+}
+getId(123);
+getId(123);
+getId('Hiiiiiii');
 //# sourceMappingURL=app.js.map
