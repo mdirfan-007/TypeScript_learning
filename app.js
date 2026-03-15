@@ -31,7 +31,29 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // }
 // getFirstElement<number>([1,2,3])
 // getFirstElement<string>(["a","b","c"])
-let a = 10;
-let d1 = a;
-console.log(typeof d1);
+// let a: any = 10
+// let d1 = (a as string)
+// console.log(typeof d1);
+//Array
+let arr = [12, 3, 45, 6, 67, 2];
+console.log(arr);
+//Tuple
+let arr2 = [12, 'hekki'];
+console.log(arr2[1]);
+//Enum
+var statusCode;
+(function (statusCode) {
+    statusCode[statusCode["success"] = 200] = "success";
+    statusCode[statusCode["create"] = 201] = "create";
+    statusCode[statusCode["error"] = 404] = "error";
+})(statusCode || (statusCode = {}));
+let accessCode = statusCode.error;
+console.log(accessCode);
+//Types
+let a = 'undefined';
+console.log(typeof a);
+function sum() {
+    console.log(1 + 1);
+}
+console.log(sum());
 //# sourceMappingURL=app.js.map
