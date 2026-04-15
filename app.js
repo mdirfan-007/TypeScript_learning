@@ -86,4 +86,11 @@ function getId(id) {
 getId(123);
 getId(123);
 getId('Hiiiiiii');
+// arrow function
+let sum = (a, b, c) => {
+    console.log(c);
+    return a + b;
+};
+console.log(sum(2, 3, "irfan"));
+console.log(sum(2, 3, 'danish'));
 //# sourceMappingURL=app.js.map

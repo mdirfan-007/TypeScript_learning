@@ -147,3 +147,15 @@ getId(123)
 getId(123)
 
 getId('Hiiiiiii')
+
+// arrow function
+
+let sum = (a:number , b:number, c:string) =>{
+    console.log(c);
+    return a+b
+    
+}
+
+console.log(sum(2,3,"irfan"));
+console.log(sum(2,3,'danish'));
+
